@@ -162,6 +162,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-top: -74px;
+    @include mq("md") {
+       // max-width: fit-content;
+    }
 }
 
 .mv__inner {
@@ -189,9 +193,9 @@
 
 //ビジョン
 .vision {
-    padding: 105px 0 91px;
+    padding: 125px 0 115px;
     @include mq("md") {
-        padding-bottom: 100px;
+        padding: 120px 0 133px;
     }
 }
 .vision__title {
@@ -202,7 +206,7 @@
 }
 //サービス
 .service {
-    padding: 105px 0 100px;
+    padding: 90px 0 100px;
     background-color: $beige;
 }
 
@@ -221,25 +225,28 @@
     aspect-ratio: 4 / 3;
 }
 .card__title {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     color: $green;
     font-size: 16px;
     line-height: 1.562;
     @include mq("md") {
-        margin-top: 15px;
+        margin-top: 5px;
     }
 }
 
 //ニュース
 .news {
-    padding: 101px 0 100px;
+    padding: 80px 0 109px;
     @include mq("md") {
-        padding: 111px 0 90px;
+        padding: 85px 0 90px;
     }
 }
 .news__items {
-    margin-top: 50px;
+    margin-top: 45px;
+    @include mq("md") {
+        margin-top: 50px;
+    }
 }
 .news__item:not(:first-child) {
     margin-top: 30px;
@@ -270,17 +277,21 @@
     font-family: "Noto Sans JP",sans-serif;
     font-size: 14px;
     line-height: 1.786;
+    letter-spacing: 0.015em;
 }
 .news-item__title {
     font-family: "Noto Sans JP",sans-serif;
     font-size: 15px;
-    letter-spacing: 0.05em;
-    margin-left: 40px;
+    letter-spacing: 0.07em;
+    margin-left: 50px;
     line-height: 1.667;
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;//3行過ぎたら…
+    @include mq("md") {
+        padding-top: 10px;
+    }
 
     a {
         color: $green;
@@ -304,6 +315,7 @@
     background-size: cover;
     @include mq("md") {
         background-image: url(/images/bg-SP.jpg);
+        padding-top: 9px;
     }
 }
 .contact__inner {
@@ -349,6 +361,9 @@
     padding-bottom: 17px;
     letter-spacing: 0.05em;
     color: $green;
+    @include mq("md") {
+        padding-bottom: 13px;
+    }
 }
 
 .heading::after {
