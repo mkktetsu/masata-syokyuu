@@ -59,8 +59,8 @@
     color: $green;
     height: inherit;
 }
-.header__contact {
-    margin-left: 66px;
+.header__item--contact {
+    padding-top: 10px;
 }
 //ハンバーガー
 .hamburger {
@@ -253,6 +253,19 @@
         padding-bottom: 20px;
     }
 }
+
+//↓変更箇所
+.news-item a {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;   
+    color: $green;
+}
+
+.news-item a:hover {
+  opacity: 0.7; // 好みでホバー時の演出
+}
+//↑変更箇所
 .news-item__date {
     font-family: "Noto Sans JP",sans-serif;
     font-size: 14px;
@@ -389,7 +402,7 @@
     letter-spacing: 0.05em;
     color: $white;
     border-radius: 4px;
-    margin-left: 66px;
+   // margin-left: 66px;
     background-color: $green;
     transition: background-color 0.3s;
     &:hover {
