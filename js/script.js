@@ -35,9 +35,4 @@ $(function () {
     $(".js-hamburger").removeClass("is-active");
     $(this).fadeOut();
   });
-
-  // 中のコンテンツをクリックしたときは、バブリングを止めて閉じないようにする
-  $(".drawer-menu__inner").click(function (e) {
-    e.stopPropagation();
-  });
 });
