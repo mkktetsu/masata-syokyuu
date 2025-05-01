@@ -192,10 +192,6 @@ select::-ms-expand {
   height: inherit;
 }
 
-.header__item:not(:first-child) {
-  margin-left: 66px;
-}
-
 .header__item {
   height: inherit;
 }
@@ -208,10 +204,12 @@ select::-ms-expand {
   align-items: center;
   color: #2B3F2F;
   height: inherit;
+  padding: 0 31px;
 }
 
 .header__item--contact {
   padding-top: 10px;
+  margin-left: 35px;
 }
 
 .hamburger {
@@ -305,6 +303,7 @@ select::-ms-expand {
   line-height: 0.875;
   color: #2B3F2F;
   font-weight: 500;
+  padding: 25px 50px 25px;
 }
 
 .drawer-menu__contact {
@@ -314,12 +313,13 @@ select::-ms-expand {
 .mv {
   width: 100%;
   height: 100vh;
-  background-image: url(/images/FV.jpg);
+  background-image: url(/images/fv.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: -74px;
 }
+
 .mv__inner {
   position: relative;
   width: 100%;
@@ -370,7 +370,7 @@ select::-ms-expand {
 .service__cards {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 35px;
        column-gap: 35px;
   row-gap: 46px;
@@ -378,6 +378,12 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .service__cards {
     padding: 0 12.5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 375px) {
+  .service__cards {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -482,7 +488,9 @@ select::-ms-expand {
 
 .contact {
   width: 100%;
-  height: 340px;
+  max-width: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
   background-image: url(/images/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -490,8 +498,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .contact {
-    background-image: url(/images/bg-SP.jpg);
-    padding-top: 9px;
+    background-image: url(/images/bg-sp.jpg);
   }
 }
 
@@ -500,7 +507,6 @@ select::-ms-expand {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: inherit;
 }
 
 .footer {
@@ -578,7 +584,6 @@ select::-ms-expand {
   .heading.heading--center::after {
     left: 0;
     transform: translateX(0);
-    text-align: left;
   }
 }
 

@@ -1,10 +1,4 @@
-// $(function () {
-//      // ハンバーガーメニュー
-//   $(".js-hamburger,.js-drawer").click(function () {
-//     $(".js-hamburger").toggleClass("is-active");
-//     $(".js-drawer").fadeToggle();
-//   });
-// });
+
 $(function () {
   // ヘッダーの高さ分だけコンテンツを下げる
   const height = $(".js-header").height();
@@ -22,21 +16,6 @@ $(function () {
     return false;
   });
 });
-
-// $(function () {
-//   // ハンバーガーアイコンをクリックで開閉
-//   $(".js-hamburger").click(function () {
-//     $(this).toggleClass("is-active");
-//     $(".js-drawer").fadeToggle();
-//   });
-
-//   // ドロワーメニューの中のリンクをクリックしたら閉じる
-//   $(".drawer-menu__link, .drawer-menu__contact").click(function () {
-//     $(".js-hamburger").removeClass("is-active");
-//     $(".js-drawer").fadeOut();
-//   });
-// });
-
 
 $(function () {
   // ハンバーガーアイコンで開閉
@@ -59,6 +38,6 @@ $(function () {
 
   // 中のコンテンツをクリックしたときは、バブリングを止めて閉じないようにする
   $(".drawer-menu__inner").click(function (e) {
-    e.stopPropagation(); // ← これがポイント！
+    e.stopPropagation();
   });
 });
